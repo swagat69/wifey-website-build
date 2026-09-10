@@ -122,7 +122,7 @@ export function Difference() {
   return (
     <section className="bg-ink text-white">
       <div className="mx-auto max-w-[1220px] px-6 py-20 md:px-12 md:py-28">
-        <div className="grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
+        <div className="grid items-start lg:items-center gap-12 lg:grid-cols-12 lg:gap-16">
           <Reveal className="lg:col-span-7">
             <SectionLabel n="02">The Hire a Wifey difference</SectionLabel>
             <h2 className="display-lg mt-6 text-white">

@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
-import { Header } from "@/components/site/Header";
-import { Footer } from "@/components/site/Footer";
+import { Layout } from "@/components/site/Layout";
 import { CONTACT, SUBURBS } from "@/data/site";
 import bedImg from "@/assets/bed-making.jpg";
 
@@ -78,9 +77,7 @@ function BookingPage() {
   }
 
   return (
-    <div className="min-h-screen">
-      <Header />
-      <main>
+    <Layout>
         <section className="mx-auto grid max-w-[1400px] gap-12 px-5 py-14 md:px-10 md:py-20 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <p className="eyebrow">Booking</p>
@@ -245,8 +242,6 @@ function BookingPage() {
             )}
           </div>
         </section>
-      </main>
-      <Footer />
-    </div>
+    </Layout>
   );
 }

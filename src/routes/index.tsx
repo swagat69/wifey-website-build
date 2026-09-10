@@ -76,7 +76,7 @@ function HomePage() {
 
 function Hero() {
   return (
-    <section className="mx-auto grid max-w-[1400px] items-center gap-10 px-5 py-12 md:px-10 lg:grid-cols-12 lg:gap-14 lg:py-16">
+    <section className="mx-auto grid max-w-[1220px] items-center gap-10 px-6 py-12 md:px-12 lg:grid-cols-12 lg:gap-14 lg:py-16">
       <div className="lg:col-span-6">
         <p className="eyebrow">Hervey Bay, Queensland</p>
         <h1 className="display-xl mt-5">

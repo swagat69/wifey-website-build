@@ -28,8 +28,8 @@ export const Route = createFileRoute("/recruitment")({
 });
 
 const field =
-  "w-full border-b border-ink/25 bg-transparent py-3 text-base outline-none transition-colors placeholder:text-ink/35 focus:border-pink";
-const label = "text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-ink/50";
+  "field";
+const label = "field-label";
 
 function RecruitmentPage() {
   const [sent, setSent] = useState(false);
@@ -57,7 +57,7 @@ function RecruitmentPage() {
 
   return (
     <Layout>
-        <section className="mx-auto max-w-[1400px] px-5 py-14 md:px-10 md:py-20">
+        <section className="mx-auto max-w-[1220px] px-6 py-14 md:px-12 md:py-20">
           <div className="grid gap-12 lg:grid-cols-12">
             <div className="lg:col-span-6">
               <p className="eyebrow">Careers at Hire a Wifey</p>

@@ -11,7 +11,14 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BookingRouteImport } from './routes/booking'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as FaqsRouteImport } from './routes/faqs'
+import { Route as HowItWorksRouteImport } from './routes/how-it-works'
+import { Route as NdisDvaRouteImport } from './routes/ndis-dva'
 import { Route as RecruitmentRouteImport } from './routes/recruitment'
+import { Route as ServiceAreaRouteImport } from './routes/service-area'
+import { Route as WhatWeDoRouteImport } from './routes/what-we-do'
+import { Route as WhoWeHelpRouteImport } from './routes/who-we-help'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -23,40 +30,134 @@ const BookingRoute = BookingRouteImport.update({
   path: '/booking',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqsRoute = FaqsRouteImport.update({
+  id: '/faqs',
+  path: '/faqs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HowItWorksRoute = HowItWorksRouteImport.update({
+  id: '/how-it-works',
+  path: '/how-it-works',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NdisDvaRoute = NdisDvaRouteImport.update({
+  id: '/ndis-dva',
+  path: '/ndis-dva',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RecruitmentRoute = RecruitmentRouteImport.update({
   id: '/recruitment',
   path: '/recruitment',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServiceAreaRoute = ServiceAreaRouteImport.update({
+  id: '/service-area',
+  path: '/service-area',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WhatWeDoRoute = WhatWeDoRouteImport.update({
+  id: '/what-we-do',
+  path: '/what-we-do',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WhoWeHelpRoute = WhoWeHelpRouteImport.update({
+  id: '/who-we-help',
+  path: '/who-we-help',
   getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/booking': typeof BookingRoute
+  '/contact': typeof ContactRoute
+  '/faqs': typeof FaqsRoute
+  '/how-it-works': typeof HowItWorksRoute
+  '/ndis-dva': typeof NdisDvaRoute
   '/recruitment': typeof RecruitmentRoute
+  '/service-area': typeof ServiceAreaRoute
+  '/what-we-do': typeof WhatWeDoRoute
+  '/who-we-help': typeof WhoWeHelpRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/booking': typeof BookingRoute
+  '/contact': typeof ContactRoute
+  '/faqs': typeof FaqsRoute
+  '/how-it-works': typeof HowItWorksRoute
+  '/ndis-dva': typeof NdisDvaRoute
   '/recruitment': typeof RecruitmentRoute
+  '/service-area': typeof ServiceAreaRoute
+  '/what-we-do': typeof WhatWeDoRoute
+  '/who-we-help': typeof WhoWeHelpRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/booking': typeof BookingRoute
+  '/contact': typeof ContactRoute
+  '/faqs': typeof FaqsRoute
+  '/how-it-works': typeof HowItWorksRoute
+  '/ndis-dva': typeof NdisDvaRoute
   '/recruitment': typeof RecruitmentRoute
+  '/service-area': typeof ServiceAreaRoute
+  '/what-we-do': typeof WhatWeDoRoute
+  '/who-we-help': typeof WhoWeHelpRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/booking' | '/recruitment'
+  fullPaths:
+    | '/'
+    | '/booking'
+    | '/contact'
+    | '/faqs'
+    | '/how-it-works'
+    | '/ndis-dva'
+    | '/recruitment'
+    | '/service-area'
+    | '/what-we-do'
+    | '/who-we-help'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/booking' | '/recruitment'
-  id: '__root__' | '/' | '/booking' | '/recruitment'
+  to:
+    | '/'
+    | '/booking'
+    | '/contact'
+    | '/faqs'
+    | '/how-it-works'
+    | '/ndis-dva'
+    | '/recruitment'
+    | '/service-area'
+    | '/what-we-do'
+    | '/who-we-help'
+  id:
+    | '__root__'
+    | '/'
+    | '/booking'
+    | '/contact'
+    | '/faqs'
+    | '/how-it-works'
+    | '/ndis-dva'
+    | '/recruitment'
+    | '/service-area'
+    | '/what-we-do'
+    | '/who-we-help'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BookingRoute: typeof BookingRoute
+  ContactRoute: typeof ContactRoute
+  FaqsRoute: typeof FaqsRoute
+  HowItWorksRoute: typeof HowItWorksRoute
+  NdisDvaRoute: typeof NdisDvaRoute
   RecruitmentRoute: typeof RecruitmentRoute
+  ServiceAreaRoute: typeof ServiceAreaRoute
+  WhatWeDoRoute: typeof WhatWeDoRoute
+  WhoWeHelpRoute: typeof WhoWeHelpRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -75,11 +176,60 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BookingRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faqs': {
+      id: '/faqs'
+      path: '/faqs'
+      fullPath: '/faqs'
+      preLoaderRoute: typeof FaqsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/how-it-works': {
+      id: '/how-it-works'
+      path: '/how-it-works'
+      fullPath: '/how-it-works'
+      preLoaderRoute: typeof HowItWorksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ndis-dva': {
+      id: '/ndis-dva'
+      path: '/ndis-dva'
+      fullPath: '/ndis-dva'
+      preLoaderRoute: typeof NdisDvaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/recruitment': {
       id: '/recruitment'
       path: '/recruitment'
       fullPath: '/recruitment'
       preLoaderRoute: typeof RecruitmentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/service-area': {
+      id: '/service-area'
+      path: '/service-area'
+      fullPath: '/service-area'
+      preLoaderRoute: typeof ServiceAreaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/what-we-do': {
+      id: '/what-we-do'
+      path: '/what-we-do'
+      fullPath: '/what-we-do'
+      preLoaderRoute: typeof WhatWeDoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/who-we-help': {
+      id: '/who-we-help'
+      path: '/who-we-help'
+      fullPath: '/who-we-help'
+      preLoaderRoute: typeof WhoWeHelpRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -88,7 +238,14 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BookingRoute: BookingRoute,
+  ContactRoute: ContactRoute,
+  FaqsRoute: FaqsRoute,
+  HowItWorksRoute: HowItWorksRoute,
+  NdisDvaRoute: NdisDvaRoute,
   RecruitmentRoute: RecruitmentRoute,
+  ServiceAreaRoute: ServiceAreaRoute,
+  WhatWeDoRoute: WhatWeDoRoute,
+  WhoWeHelpRoute: WhoWeHelpRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

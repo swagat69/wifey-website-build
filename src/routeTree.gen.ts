@@ -10,33 +10,53 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BookingRouteImport } from './routes/booking'
+import { Route as RecruitmentRouteImport } from './routes/recruitment'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BookingRoute = BookingRouteImport.update({
+  id: '/booking',
+  path: '/booking',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RecruitmentRoute = RecruitmentRouteImport.update({
+  id: '/recruitment',
+  path: '/recruitment',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/booking': typeof BookingRoute
+  '/recruitment': typeof RecruitmentRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/booking': typeof BookingRoute
+  '/recruitment': typeof RecruitmentRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/booking': typeof BookingRoute
+  '/recruitment': typeof RecruitmentRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/booking' | '/recruitment'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/booking' | '/recruitment'
+  id: '__root__' | '/' | '/booking' | '/recruitment'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BookingRoute: typeof BookingRoute
+  RecruitmentRoute: typeof RecruitmentRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +68,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/booking': {
+      id: '/booking'
+      path: '/booking'
+      fullPath: '/booking'
+      preLoaderRoute: typeof BookingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/recruitment': {
+      id: '/recruitment'
+      path: '/recruitment'
+      fullPath: '/recruitment'
+      preLoaderRoute: typeof RecruitmentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BookingRoute: BookingRoute,
+  RecruitmentRoute: RecruitmentRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

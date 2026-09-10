@@ -17,7 +17,7 @@ const SERVICES = [
 export function Footer() {
   return (
     <footer className="bg-ink text-white/80">
-      <div className="mx-auto max-w-[1400px] px-5 py-16 md:px-10 md:py-20">
+      <div className="mx-auto max-w-[1220px] px-6 py-16 md:px-12 md:py-20">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-4">
             <h2 className="font-display text-3xl leading-tight text-white">

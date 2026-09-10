@@ -23,7 +23,7 @@ const TRUST = [
 export function TrustStrip() {
   return (
     <section className="border-y border-ink/10 bg-blush/60">
-      <ul className="mx-auto flex max-w-[1400px] flex-wrap gap-x-8 gap-y-3 px-5 py-5 md:px-10">
+      <ul className="mx-auto flex max-w-[1220px] flex-wrap gap-x-8 gap-y-3 px-6 py-5 md:px-12">
         {TRUST.map((t) => (
           <li
             key={t}
@@ -50,7 +50,7 @@ export function ToDoIntro() {
     "And somehow the floors need cleaning again.",
   ];
   return (
-    <section className="mx-auto max-w-[1400px] px-5 py-20 md:px-10 md:py-28">
+    <section className="mx-auto max-w-[1220px] px-6 py-20 md:px-12 md:py-28">
       <div className="grid items-start gap-12 lg:grid-cols-12">
         <Reveal className="lg:col-span-7">
           <SectionLabel n="01">The good news</SectionLabel>
@@ -121,7 +121,7 @@ export function Difference() {
   ];
   return (
     <section className="bg-ink text-white">
-      <div className="mx-auto max-w-[1400px] px-5 py-20 md:px-10 md:py-28">
+      <div className="mx-auto max-w-[1220px] px-6 py-20 md:px-12 md:py-28">
         <Reveal>
           <SectionLabel n="02">The Hire a Wifey difference</SectionLabel>
           <h2 className="display-lg mt-6 max-w-3xl text-white">
@@ -193,7 +193,7 @@ export function GoodHands() {
     { t: "Customer-focused Wifeys", d: "Respectful, reliable and here to make your week easier." },
   ];
   return (
-    <section className="mx-auto max-w-[1400px] px-5 py-20 md:px-10 md:py-28">
+    <section className="mx-auto max-w-[1220px] px-6 py-20 md:px-12 md:py-28">
       <div className="grid items-start gap-12 lg:grid-cols-12">
         <Reveal className="lg:col-span-5">
           <SectionLabel n="03">Trust</SectionLabel>
@@ -234,7 +234,7 @@ export function GoodHands() {
 
 export function ServicesFull() {
   return (
-    <section id="services" className="mx-auto max-w-[1400px] px-5 py-16 md:px-10 md:py-24">
+    <section id="services" className="mx-auto max-w-[1220px] px-6 py-16 md:px-12 md:py-24">
       <div className="border-t border-ink/15">
         {SERVICE_GROUPS.map((g, i) => (
           <details key={g.title} className="group border-b border-ink/15" open={i === 0}>
@@ -279,7 +279,7 @@ export function ServicesFull() {
 export function ServicesPreview() {
   return (
     <section className="border-y border-ink/10 bg-white">
-      <div className="mx-auto max-w-[1400px] px-5 py-20 md:px-10 md:py-28">
+      <div className="mx-auto max-w-[1220px] px-6 py-20 md:px-12 md:py-28">
         <div className="grid items-start gap-12 lg:grid-cols-12">
           <Reveal className="lg:col-span-5">
             <SectionLabel n="04">What can your Wifey do?</SectionLabel>
@@ -335,7 +335,7 @@ export function Priorities() {
   ];
   return (
     <section className="bg-blush/70">
-      <div className="mx-auto grid items-center gap-12 px-5 py-20 md:px-10 md:py-28 lg:grid-cols-12 lg:gap-16 xl:mx-auto xl:max-w-[1400px]">
+      <div className="mx-auto grid items-center gap-12 px-6 py-20 md:px-12 md:py-28 lg:grid-cols-12 lg:gap-16 xl:mx-auto xl:max-w-[1220px]">
         <Reveal className="lg:col-span-6">
           <SectionLabel n="05">Build your own visit</SectionLabel>
           <h2 className="display-lg mt-6">
@@ -410,7 +410,7 @@ const WHO = [
 
 export function WhoWeHelp({ heading = true }: { heading?: boolean }) {
   return (
-    <section id="who-we-help" className="mx-auto max-w-[1400px] px-5 py-16 md:px-10 md:py-24">
+    <section id="who-we-help" className="mx-auto max-w-[1220px] px-6 py-16 md:px-12 md:py-24">
       {heading && (
         <Reveal>
           <SectionLabel>Who we help</SectionLabel>
@@ -465,7 +465,7 @@ export function RegularService() {
   ];
   return (
     <section className="border-y border-ink/10 bg-white">
-      <div className="mx-auto max-w-[1400px] px-5 py-20 md:px-10 md:py-28">
+      <div className="mx-auto max-w-[1220px] px-6 py-20 md:px-12 md:py-28">
         <div className="grid items-start gap-12 lg:grid-cols-12">
           <Reveal className="lg:col-span-6">
             <SectionLabel>Regular service</SectionLabel>
@@ -523,7 +523,7 @@ const REASONS = [
 export function WhyChoose() {
   return (
     <section className="border-t border-ink/10 bg-white">
-      <div className="mx-auto max-w-[1400px] px-5 py-20 md:px-10 md:py-28">
+      <div className="mx-auto max-w-[1220px] px-6 py-20 md:px-12 md:py-28">
         <div className="grid items-start gap-12 lg:grid-cols-12">
           <Reveal className="lg:col-span-5">
             <SectionLabel>Why us</SectionLabel>
@@ -577,7 +577,7 @@ export function Ndis() {
     "Other appropriate household assistance",
   ];
   return (
-    <section id="ndis" className="mx-auto max-w-[1400px] px-5 py-16 md:px-10 md:py-24">
+    <section id="ndis" className="mx-auto max-w-[1220px] px-6 py-16 md:px-12 md:py-24">
       <div className="grid items-start gap-12 lg:grid-cols-12">
         <Reveal className="lg:col-span-5">
           <SectionLabel>NDIS</SectionLabel>
@@ -622,7 +622,7 @@ export function Ndis() {
 export function Dva() {
   return (
     <section id="dva" className="border-t border-ink/10 bg-white">
-      <div className="mx-auto max-w-[1400px] px-5 py-16 md:px-10 md:py-24">
+      <div className="mx-auto max-w-[1220px] px-6 py-16 md:px-12 md:py-24">
         <div className="grid items-start gap-12 lg:grid-cols-12">
           <Reveal className="lg:col-span-5">
             <SectionLabel>DVA</SectionLabel>
@@ -656,7 +656,7 @@ export function Dva() {
 export function ServiceArea({ compact = false }: { compact?: boolean }) {
   return (
     <section id="service-area" className="bg-ink text-white">
-      <div className="mx-auto grid items-start gap-12 px-5 py-20 md:px-10 md:py-28 lg:grid-cols-12 xl:mx-auto xl:max-w-[1400px]">
+      <div className="mx-auto grid items-start gap-12 px-6 py-20 md:px-12 md:py-28 lg:grid-cols-12 xl:mx-auto xl:max-w-[1220px]">
         <Reveal className="lg:col-span-5">
           <SectionLabel>Service area</SectionLabel>
           <h2 className="display-lg mt-6 text-white">
@@ -731,7 +731,7 @@ const STEPS = [
 
 export function HowItWorks({ heading = true }: { heading?: boolean }) {
   return (
-    <section id="how-it-works" className="mx-auto max-w-[1400px] px-5 py-16 md:px-10 md:py-24">
+    <section id="how-it-works" className="mx-auto max-w-[1220px] px-6 py-16 md:px-12 md:py-24">
       {heading && (
         <Reveal className="max-w-2xl">
           <SectionLabel>The process</SectionLabel>
@@ -786,7 +786,7 @@ export function TimeBack() {
         className="absolute inset-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/70 to-ink/25" />
-      <div className="relative mx-auto max-w-[1400px] px-5 py-24 md:px-10 md:py-32">
+      <div className="relative mx-auto max-w-[1220px] px-6 py-24 md:px-12 md:py-32">
         <Reveal className="max-w-2xl text-white">
           <p className="eyebrow">The real product is time</p>
           <h2 className="display-lg mt-5 text-white">
@@ -818,7 +818,7 @@ export function TimeBack() {
 
 export function Reviews() {
   return (
-    <section id="reviews" className="mx-auto max-w-[1400px] px-5 py-16 md:px-10 md:py-24">
+    <section id="reviews" className="mx-auto max-w-[1220px] px-6 py-16 md:px-12 md:py-24">
       <Reveal className="max-w-2xl">
         <SectionLabel>Reviews</SectionLabel>
         <h2 className="display-md mt-6">
@@ -874,7 +874,7 @@ export function Faqs({ limit }: { limit?: number }) {
   const list = limit ? FAQS.slice(0, limit) : FAQS;
   return (
     <section id="faqs" className="border-y border-ink/10 bg-white">
-      <div className="mx-auto max-w-[1400px] px-5 py-16 md:px-10 md:py-24">
+      <div className="mx-auto max-w-[1220px] px-6 py-16 md:px-12 md:py-24">
         <div className="grid items-start gap-12 lg:grid-cols-12">
           <Reveal className="lg:col-span-4">
             <SectionLabel>Answers</SectionLabel>
@@ -920,7 +920,7 @@ export function Faqs({ limit }: { limit?: number }) {
 export function EnquirySection({ showHeading = true }: { showHeading?: boolean }) {
   return (
     <section id="enquiry" className="scroll-mt-24 bg-blush/70">
-      <div className="mx-auto grid items-start gap-12 px-5 py-16 md:px-10 md:py-24 lg:grid-cols-12 xl:mx-auto xl:max-w-[1400px]">
+      <div className="mx-auto grid items-start gap-12 px-6 py-16 md:px-12 md:py-24 lg:grid-cols-12 xl:mx-auto xl:max-w-[1220px]">
         <Reveal className="lg:col-span-4">
           {showHeading && (
             <>
@@ -973,7 +973,7 @@ export function EnquirySection({ showHeading = true }: { showHeading?: boolean }
 export function ImagineThis() {
   return (
     <section className="bg-ink text-white">
-      <div className="mx-auto max-w-[1400px] px-5 py-20 md:px-10 md:py-32">
+      <div className="mx-auto max-w-[1220px] px-6 py-20 md:px-12 md:py-32">
         <Reveal className="max-w-4xl">
           <p className="eyebrow">Imagine this…</p>
           <h2 className="display-lg mt-6 text-white">You get home.</h2>
@@ -1023,7 +1023,7 @@ export function ImagineThis() {
 
 export function RecruitmentTeaser() {
   return (
-    <section id="recruitment" className="mx-auto max-w-[1400px] px-5 py-16 md:px-10 md:py-24">
+    <section id="recruitment" className="mx-auto max-w-[1220px] px-6 py-16 md:px-12 md:py-24">
       <Reveal className="grid items-start gap-10 border-t-2 border-pink pt-10 lg:grid-cols-12">
         <div className="lg:col-span-4">
           <SectionLabel>Careers</SectionLabel>

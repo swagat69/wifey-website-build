@@ -33,7 +33,7 @@ export function Header() {
         compact ? "py-2" : "py-3.5"
       }`}
     >
-      <div className="mx-auto flex max-w-[1400px] items-center gap-6 px-5 md:px-10">
+      <div className="mx-auto flex max-w-[1220px] items-center gap-6 px-6 md:px-12">
         <Link to="/" aria-label="Hire a Wifey — home" className="shrink-0">
           <img
             src={logo.url}
@@ -63,7 +63,7 @@ export function Header() {
           >
             Become a Wifey
           </Link>
-          <Link to="/booking" className="btn btn-primary !px-5 !py-3 !text-[0.72rem]">
+          <Link to="/booking" className="btn btn-primary !px-6 !py-3 !text-[0.72rem]">
             Book a Wifey
           </Link>
         </nav>

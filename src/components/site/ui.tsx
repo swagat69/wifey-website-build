@@ -69,7 +69,7 @@ export function PageHero({
 }) {
   return (
     <section className="border-b border-ink/10 bg-blush/50">
-      <div className="mx-auto max-w-[1400px] px-5 py-14 md:px-10 md:py-20">
+      <div className="mx-auto max-w-[1220px] px-6 py-14 md:px-12 md:py-20">
         <p className="eyebrow">{eyebrow}</p>
         <h1 className="display-lg mt-5 max-w-4xl">{title}</h1>
         {intro && <p className="lede mt-6 max-w-2xl">{intro}</p>}

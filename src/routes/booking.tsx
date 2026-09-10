@@ -78,7 +78,7 @@ function BookingPage() {
 
   return (
     <Layout>
-        <section className="mx-auto grid max-w-[1400px] gap-12 px-5 py-14 md:px-10 md:py-20 lg:grid-cols-12">
+        <section className="mx-auto grid max-w-[1220px] gap-12 px-6 py-14 md:px-12 md:py-20 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <p className="eyebrow">Booking</p>
             <h1 className="display-lg mt-5">

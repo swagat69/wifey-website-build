@@ -57,7 +57,7 @@ function RecruitmentPage() {
 
   return (
     <Layout>
-        <section className="mx-auto max-w-[1400px] px-5 py-14 md:px-10 md:py-20">
+        <section className="mx-auto max-w-[1220px] px-6 py-14 md:px-12 md:py-20">
           <div className="grid gap-12 lg:grid-cols-12">
             <div className="lg:col-span-6">
               <p className="eyebrow">Careers at Hire a Wifey</p>

@@ -122,18 +122,15 @@ export function Difference() {
   return (
     <section className="bg-ink text-white">
       <div className="mx-auto max-w-[1220px] px-6 py-20 md:px-12 md:py-28">
-        <Reveal>
-          <SectionLabel n="02">The Hire a Wifey difference</SectionLabel>
-          <h2 className="display-lg mt-6 max-w-3xl text-white">
-            More than
-            <br />
-            just a cleaner.
-          </h2>
-        </Reveal>
-
-        <div className="mt-14 grid items-start gap-12 lg:grid-cols-12">
-          <Reveal className="lg:col-span-5">
-            <p className="text-lg leading-relaxed text-white/75">
+        <div className="grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
+          <Reveal className="lg:col-span-7">
+            <SectionLabel n="02">The Hire a Wifey difference</SectionLabel>
+            <h2 className="display-lg mt-6 text-white">
+              More than
+              <br />
+              just a cleaner.
+            </h2>
+            <p className="mt-8 text-lg leading-relaxed text-white/75">
               There are plenty of companies that will clean your floors and bathrooms. Hire a Wifey
               is different.
             </p>
@@ -146,17 +143,7 @@ export function Difference() {
             </p>
           </Reveal>
 
-          <Reveal className="lg:col-span-4" delay={90}>
-            <ul className="divide-y divide-white/15 border-y border-white/15">
-              {items.map((i) => (
-                <li key={i} className="py-3.5 text-white/80">
-                  {i}
-                </li>
-              ))}
-            </ul>
-          </Reveal>
-
-          <Reveal className="lg:col-span-3" delay={160}>
+          <Reveal className="lg:col-span-5" delay={110}>
             <div className="img-hover">
               <img
                 src={kitchenImg}
@@ -164,11 +151,24 @@ export function Difference() {
                 width={1200}
                 height={900}
                 loading="lazy"
-                className="aspect-[3/4] w-full object-cover grayscale"
+                className="aspect-[4/5] w-full object-cover grayscale"
               />
             </div>
           </Reveal>
         </div>
+
+        <Reveal className="mt-14" delay={60}>
+          <p className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-white/45">
+            It might be
+          </p>
+          <ul className="mt-6 grid gap-x-12 border-t border-white/15 sm:grid-cols-2 lg:grid-cols-3">
+            {items.map((i) => (
+              <li key={i} className="border-b border-white/15 py-3.5 text-white/80">
+                {i}
+              </li>
+            ))}
+          </ul>
+        </Reveal>
 
         <Reveal className="mt-16 border-t border-pink pt-10">
           <p className="font-display text-3xl leading-tight md:text-5xl">

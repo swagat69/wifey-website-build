@@ -45,8 +45,8 @@ const PRIORITIES = [
 ];
 
 const field =
-  "w-full border-b border-ink/25 bg-transparent py-3 text-base outline-none transition-colors placeholder:text-ink/35 focus:border-pink";
-const label = "text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-ink/50";
+  "field";
+const label = "field-label";
 
 function BookingPage() {
   const [sent, setSent] = useState(false);

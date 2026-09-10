@@ -5,10 +5,10 @@ const TOPICS = ["General", "Cleaning", "Household Help", "NDIS", "DVA", "Other"]
 const CONTACT_METHODS = ["Phone call", "Text message", "Email"];
 
 const fieldClass =
-  "w-full border-b border-ink/25 bg-transparent py-3 text-base outline-none transition-colors placeholder:text-ink/35 focus:border-pink";
+  "field";
 
 const labelClass =
-  "text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-ink/50";
+  "field-label";
 
 export function EnquiryForm() {
   const [sent, setSent] = useState(false);
